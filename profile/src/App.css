@@ -3,3 +3,111 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  position: relative;
+  /* border: solid 10px #e2e4e8; */
+}
+
+.subNavBar {
+  height: 50px;
+  padding-top: 20px;
+  position: absolute;
+  padding-left: 450px;
+  padding-bottom: 10px;
+  /* top: 20px; */
+  min-width: 100%;
+  border-bottom: solid 1px#E2E4E8;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+.subNavBar a {
+  margin-right: 60px;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.subNavBar a:hover {
+  border-bottom: 1px solid grey;
+}
+
+.sideBar {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 110px;
+  position: absolute;
+  top: 40px;
+}
+
+button {
+  width: 85%;
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #fafbfc;
+  border: solid 1px #d9dbdb;
+  border-radius: 5px;
+}
+
+.bodyCon {
+  width: 60%;
+  position: absolute;
+  right: 110px;
+  top: 90px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e2e4e8;
+}
+.eachRepo {
+  font-size: 12px;
+  height: 140px;
+  width: 100%;
+  border-top: solid 1px #e2e4e8;
+  padding-top: 20px;
+  /* border-bottom: solid 1px black; */
+}
+
+.aviVeg {
+  height: 200px;
+  border-radius: 50%;
+  /* z-index: 0.5; */
+}
+
+.profileName {
+  font-size: 28px;
+}
+.log-In {
+  font-size: 20px;
+  color: #838383;
+}
+
+.eachRepo a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2566cf;
+  text-decoration: none;
+}
+
+.eachRepo a:hover {
+  text-decoration: underline;
+}
+
+.middleEachRepo {
+  padding-top: 15px;
+}
+
+.bottomEachRepo {
+  padding-top: 15px;
+}
+
+.reposAmount {
+  background-color: #d9dbdb;
+  border-radius: 8px;
+}
