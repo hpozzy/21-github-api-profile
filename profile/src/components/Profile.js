@@ -25,7 +25,7 @@ export default () => {
           <a href="#">
             <i class="far fa-book-open"></i> Overview
           </a>{" "}
-          <a className="orangeBottom " href="#">
+          <a className="orangeBottom" href="#">
             <i class="far fa-bookmark"></i> Repositories{" "}
             <span className="reposAmount">{reposData.length}</span>
           </a>
