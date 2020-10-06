@@ -11,15 +11,7 @@ body {
   position: relative;
   /* border: solid 10px #e2e4e8; */
 }
-/* .starBtn {
-  width: 60px;
-  height: 25px;
-  border-radius: 5px;
-  border: solid 1px #d9dbdb;
-  outline: none;
-  cursor: pointer;
-  background: #fafbfc;
-} */
+
 .starBtn {
   width: 60px;
   height: 25px;
@@ -30,6 +22,7 @@ body {
   background: #fafbfc;
   position: absolute;
   right: 0px;
+  /* border-bottom: 1px solid #c4eec5; */
 }
 
 .subNavBar {
