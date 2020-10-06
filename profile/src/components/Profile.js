@@ -37,6 +37,7 @@ export default () => {
           </a>
         </nav>
       </div>
+
       <div className="sideBar">
         <div>
           <img className="aviVeg" src={profileData.avatar_url} />
@@ -46,7 +47,7 @@ export default () => {
         <div>{profileData.bio}</div>
 
         <div>
-          <button>Edit Profile</button>
+          <button className="button2">Edit Profile</button>
         </div>
         {/* <div>{profileData.blog}</div> */}
         <div>
@@ -63,9 +64,27 @@ export default () => {
       </div>
 
       <div className="bodyCon">
+        <div className="searchBar">
+          <input
+            className="inputTextArea"
+            placeholder="Find a repository..."
+          ></input>
+          <button className="button3">
+            Type: All <i class="fas fa-caret-down"></i>
+          </button>
+          <button className="button5">
+            Language: All <i class="fas fa-caret-down"></i>
+          </button>
+          <button className="button4">
+            <i class="fas fa-bookmark"></i> New
+          </button>
+        </div>
         {reposData.map((item) => (
           <div className="eachRepo">
-            <a href="#">{item.name}</a>
+            <a href="#">{item.name} </a>
+            <button className="starBtn">
+              <i class="far fa-star"></i>Star
+            </button>
             <div className="middleEachRepo"> Forked From {item.node_id}</div>
             <div className="bottomEachRepo">
               {item.language} <i class="fas fa-code-branch"></i> {item.forks}{" "}

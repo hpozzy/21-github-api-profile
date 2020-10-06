@@ -11,6 +11,26 @@ body {
   position: relative;
   /* border: solid 10px #e2e4e8; */
 }
+/* .starBtn {
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  border: solid 1px #d9dbdb;
+  outline: none;
+  cursor: pointer;
+  background: #fafbfc;
+} */
+.starBtn {
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  border: solid 1px #d9dbdb;
+  outline: none;
+  cursor: pointer;
+  background: #fafbfc;
+  position: absolute;
+  right: 0px;
+}
 
 .subNavBar {
   height: 50px;
@@ -24,7 +44,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: white;
+  background: white;
 }
 .subNavBar a {
   margin-right: 60px;
@@ -47,7 +67,7 @@ body {
   top: 40px;
 }
 
-button {
+.button2 {
   width: 85%;
   height: 35px;
   margin-top: 20px;
@@ -61,7 +81,7 @@ button {
   width: 60%;
   position: absolute;
   right: 110px;
-  top: 90px;
+  top: 60px;
   margin-bottom: 10px;
   border-bottom: 1px solid #e2e4e8;
 }
@@ -110,4 +130,45 @@ button {
 .reposAmount {
   background-color: #d9dbdb;
   border-radius: 8px;
+}
+
+/* .forkFromLink a {
+  font-size: 12px;
+} */
+
+.inputTextArea {
+  width: 60%;
+  border: solid 0.5px #d9dbdb;
+  border-radius: 4px;
+}
+
+.searchBar {
+  margin: 2px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.button3 {
+  height: 28px;
+  background: white;
+  border-radius: 4px;
+  width: 95px;
+  border: solid 0.5px #d9dbdb;
+}
+
+.button4 {
+  background: #54a158;
+  color: white;
+  border-radius: 4px;
+  height: 29px;
+  width: 75px;
+  border: solid 0.5px #d9dbdb;
+}
+
+.button5 {
+  height: 28px;
+  background: white;
+  border-radius: 4px;
+  width: 100px;
+  border: solid 0.5px #d9dbdb;
 }
