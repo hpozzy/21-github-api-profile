@@ -65,6 +65,7 @@ body {
   padding-left: 110px;
   position: absolute;
   top: 40px;
+  /* padding-bottom: 5px; */
 }
 
 .button2 {
@@ -106,6 +107,7 @@ body {
 .log-In {
   font-size: 20px;
   color: #838383;
+  padding-bottom: 15px;
 }
 
 .eachRepo a {
@@ -182,4 +184,15 @@ body {
 
 .itemFork {
   padding-right: 15px;
+}
+
+.following {
+  padding-bottom: 8px;
+}
+.sideBarLocation {
+  padding-bottom: 8px;
+}
+
+.sideBarEmail {
+  padding-bottom: 8px;
 }

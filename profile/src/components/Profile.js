@@ -50,10 +50,14 @@ export default () => {
           <button className="button2">Edit Profile</button>
         </div>
         {/* <div>{profileData.blog}</div> */}
-        <div>
+        <div className="following">
+          <i class="far fa-user-friends"></i> {profileData.followers} followers
+          · {profileData.following} following ·<i class="far fa-star"></i> 1
+        </div>
+        <div className="sideBarLocation">
           <i class="far fa-map"></i> {profileData.location}
         </div>
-        <div>
+        <div className="sideBarEmail">
           <i class="fas fa-envelope-open-text"></i>{" "}
           {profileData.email || "Oscar@gmail.com"}
         </div>
@@ -67,7 +71,7 @@ export default () => {
         <div className="searchBar">
           <input
             className="inputTextArea"
-            placeholder="Find a repository..."
+            placeholder=" Find a repository..."
           ></input>
           <button className="button3">
             Type: All <i class="fas fa-caret-down"></i>
@@ -76,7 +80,7 @@ export default () => {
             Language: All <i class="fas fa-caret-down"></i>
           </button>
           <button className="button4">
-            <i class="fas fa-bookmark"></i> New
+            <i class="far fa-bookmark"></i> New
           </button>
         </div>
         {reposData.map((item) => (
@@ -87,7 +91,9 @@ export default () => {
             </button>
             <div className="middleEachRepo"> Forked From {item.node_id}</div>
             <div className="bottomEachRepo">
-              <div className="itemLanguage">{item.language}</div>{" "}
+              <div className="itemLanguage">
+                {item.language || "Language: N/A"}
+              </div>{" "}
               <div className="itemFork">
                 <i class="fas fa-code-branch"></i> {item.forks}
               </div>{" "}
