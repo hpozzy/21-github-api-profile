@@ -87,8 +87,11 @@ export default () => {
             </button>
             <div className="middleEachRepo"> Forked From {item.node_id}</div>
             <div className="bottomEachRepo">
-              {item.language} <i class="fas fa-code-branch"></i> {item.forks}{" "}
-              {item.updated_at}
+              <div className="itemLanguage">{item.language}</div>{" "}
+              <div className="itemFork">
+                <i class="fas fa-code-branch"></i> {item.forks}
+              </div>{" "}
+              <div className="itemUpdated">{item.updated_at}</div>
             </div>
           </div>
         ))}
