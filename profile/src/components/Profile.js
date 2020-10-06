@@ -85,7 +85,7 @@ export default () => {
         </div>
         {reposData.map((item) => (
           <div className="eachRepo">
-            <a href="#">{item.name} </a>
+            <a href={item.html_url}>{item.name} </a>
             <button className="starBtn">
               <i class="far fa-star"></i>Star
             </button>
