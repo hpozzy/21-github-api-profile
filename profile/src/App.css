@@ -189,3 +189,7 @@ body {
 .sideBarEmail {
   padding-bottom: 8px;
 }
+
+.orangeBottom {
+  border-bottom: 3px solid #ea8872;
+}
