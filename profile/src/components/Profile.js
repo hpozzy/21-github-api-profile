@@ -89,7 +89,7 @@ export default () => {
             <button className="starBtn">
               <i class="far fa-star"></i>Star
             </button>
-            <div className="middleEachRepo"> Forked From {item.node_id}</div>
+            <div className="middleEachRepo"> Forked From {item.html_url}</div>
             <div className="bottomEachRepo">
               <div className="itemLanguage">
                 {item.language || "Language: N/A"}
